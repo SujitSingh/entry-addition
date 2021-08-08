@@ -1,0 +1,16 @@
+<div class="page-home">
+  <div class="page-content">
+    <form class="entry-form" (submit)="addEntry()">
+      <input type="text" [(ngModel)]="entryInput" name="entry-input" placeholder="Add new entry" />
+      <button type="submit">Add</button>
+    </form>
+    <div class="current-entries">
+      <div class="entry" *ngFor="let entry of currentEntries">
+        <span class="entry-text">
+          {{entry.entry}}
+        </span>
+        <button class="delete" (click)="removeEntry(entry)">X</button>
+      </div>
+    </div>
+  </div>
+</div>
