@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Wearsafe-labs": {
+    "input-entries": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Wearsafe-labs",
+            "outputPath": "dist/input-entries",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Wearsafe-labs:build:production"
+              "browserTarget": "input-entries:build:production"
             },
             "development": {
-              "browserTarget": "Wearsafe-labs:build:development"
+              "browserTarget": "input-entries:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Wearsafe-labs:build"
+            "browserTarget": "input-entries:build"
           }
         },
         "test": {
@@ -110,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "Wearsafe-labs"
+  "defaultProject": "input-entries"
 }
